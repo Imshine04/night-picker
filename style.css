@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+html { background: #77c866; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  color: #111;
+}
+
+.window {
+  max-width: 640px;
+  margin: 16px auto;
+  background: #f5f0e1;
+  border: 3px solid #111;
+  border-radius: 10px;
+  box-shadow: 8px 8px 0 #111;
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 3px solid #111;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #111;
+  border-radius: 50%;
+}
+.dot:first-child { background: #111; }
+.wtitle { flex: 1; text-align: center; margin-right: 56px; }
+
+.content { padding: 8px 20px 20px; }
+
+h1, h2 {
+  font-family: 'Press Start 2P', monospace;
+  line-height: 1.5;
+}
+h1 { font-size: 18px; }
+h2 { font-size: 13px; }
+
+button, select, input {
+  font-family: inherit;
+  font-size: 20px;
+  color: #111;
+  background: #fff;
+  border: 3px solid #111;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin: 4px 0;
+  box-shadow: 3px 3px 0 #111;
+}
+button { cursor: pointer; }
+button:active { transform: translate(3px, 3px); box-shadow: none; }
+
+hr { border: 0; border-top: 3px dashed #111; margin: 18px 0; }
+li { margin: 6px 0; }
+
+#result {
+  display: inline-block;
+  background: #111;
+  color: #f5f0e1;
+  padding: 8px 12px;
+}
+#result:empty { display: none; }
+
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  .window { box-shadow: 5px 5px 0 #111; }
+  .content { padding: 8px 14px 18px; }
+  input { width: 100%; box-sizing: border-box; margin-bottom: 8px; }
+}
