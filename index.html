@@ -6,6 +6,21 @@
 </head>
 <body>
   <h1>🎬 Tonight's Pick</h1>
+
+  <h2>Not sure what to watch?</h2>
+  <select id="suggestMood">
+    <option value="Funny">😂 Funny</option>
+    <option value="Emotional">😢 Emotional</option>
+    <option value="Intense">🔥 Intense</option>
+    <option value="Scary">😱 Scary</option>
+    <option value="Romantic">💙 Romantic</option>
+  </select>
+  <button id="suggest">Show top movies</button>
+  <ol id="suggestions"></ol>
+
+  <hr>
+
+  <h2>My own list</h2>
   <input id="item" placeholder="Add a movie or match">
   <select id="mood">
     <option value="😂">😂 Funny</option>
@@ -24,6 +39,9 @@
   <ul id="list"></ul>
   <button id="pick">Pick for me!</button>
   <h2 id="result"></h2>
+
+  <script src="movies.js"></script>
+  <script src="recommend.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
